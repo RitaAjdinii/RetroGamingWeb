@@ -260,7 +260,7 @@ img{
 
 #mario{
   z-index: -100;
-  animation: move 2s 100;
+  animation: move 2s 800;
   position:relative;
   bottom:100px;
   animation-direction: alternate;
