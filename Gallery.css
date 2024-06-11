@@ -1,0 +1,280 @@
+:root{
+    --clr-yellow-1:#ffd700;
+    --clr-yellow-2:#f67607;
+    --clr-grey-1:rgb(113, 163, 185);
+    --clr-grey-2:rgba(39, 69, 85, 0.65);
+    --clr-blue-1:blue;
+    --clr-black-1:black;
+    --clr-white-1:white;
+    --clr-background:blue;
+  
+    --ff-1:sans-serif;
+    --ff-2:"Press Start 2P", system-ui;
+    --ff-3:"Space Mono", monospace;
+  
+    --ff-size-1:1.0rem;
+  
+    --padding-1:1rem 1.5rem;
+    --transition:all 0.3s linear;
+    --letter-spacing:0.25rem;
+    --line-height:1.5;
+    --index:1000;
+  }
+  
+  html{
+  height: 100%;
+  }
+  
+  *,::before,::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 100%;
+  }
+  
+  
+  p{
+  font-size: var(--ff-size-1);
+  line-height: var(--line-height);
+  }
+  ul{
+    list-style-type: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  @media screen and (min-width:800px){
+  
+    h1 {
+        font-size: 4rem;
+    }
+      h2 {
+        font-size: 2.5rem;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
+    }
+  
+    body{
+        font-size: var(--ff-size-1);
+    }
+  }
+  
+  /*Scroll---*/
+  
+  nav{
+    padding:var(--padding-1);
+    border: 3px solid var(--clr-grey-2);
+    z-index: var(--index);
+    background:var(--clr-grey-1);
+  }
+  
+  .fixed-nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: var(--index);
+    background:var(--clr-grey-1);
+  }
+  
+  .nav-header{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+  }
+  
+  .nav-toggle{
+    background: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  
+  .nav-toggle .bar{
+    background-color: var(--clr-yellow-1);
+    height:6px;
+    width:30px;
+    margin:5px 0;
+    border:2px solid var(--clr-yellow-2);
+  }
+  
+  .links-container{
+    height:0;
+    overflow: hidden;
+    transition:var(--transition);
+  }
+  
+  .links .scroll-link{
+    display: block;
+    color: var(--clr-yellow-1);
+    font-size: var(--ff-size-1);
+    padding:0.75rem 0; 
+    font-weight: bold;
+    font-family: var(--ff-2);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing); 
+    transition: var(--transition); 
+  }
+  
+  .show-links{
+    height:200px;
+  }
+  
+  @media screen and (min-width:1100px){
+    nav{
+      background:var(--clr-grey-1);
+      z-index:var(--index);
+    }
+  
+    .nav-center{
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        width:90vw;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+  
+     .nav-header {
+        padding: 0;
+      }
+      .nav-toggle {
+        display: none;
+      }
+  
+      .links-container {
+        height: auto !important;
+      }
+      .links {
+        display:flex;
+      }
+  
+      .links .scroll-link{
+        display: block;
+        font-size:var(--ff-size-1);
+        letter-spacing: var(--letter-spacing);
+        transition:var(--transition);
+        margin:0 1rem;
+        font-weight: bold;
+        padding:0;
+      }
+  
+      .links .scroll-link:hover{
+        text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.5);
+        -webkit-text-stroke-width: 1px; /* Set the width of the black border */
+        -webkit-text-stroke-color: var(--clr-yellow-2);
+    }
+  }
+
+.big-container{
+  height:500px;
+  width: 1000px;
+  display: flex;
+  margin: 0 auto;
+  margin-top:50px;
+}
+
+
+.display-video{
+  height:300px;
+  width: 100%;
+}
+
+.display-container{
+  height:100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.video-display{
+  height:300px;
+  width: auto;
+  border: 3px solid green;
+}
+
+.video-controls{
+  height:200px;
+  width: auto;
+  border: 3px solid orange;
+}
+
+.scroll{
+  width:500px;
+  height: 100%;
+  border:3px solid purple;
+  overflow:auto;
+}
+
+.video-container{
+  border:1px solid grey;
+  width:100%;
+}
+.video-container h3{
+  font-family: sans-serif;
+  color: rgb(59, 59, 59);
+
+  font-size: 30px;
+}
+
+.video-container:hover{
+  background-color: blue;
+  cursor: pointer;
+}
+
+.video-container:hover h3{
+  color: red;
+}
+
+.control-btn{
+  border: none;
+  font-size: 30px;
+  height: auto;
+  width: auto;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.control-btn{
+  cursor: pointer;
+}
+
+
+#play:hover{
+  color: rgb(12, 212, 12);
+  background-color: rgba(0, 0, 0, 0.731);
+}
+
+#pause:hover{
+  color: rgb(253, 32, 32);
+  background-color: rgba(0, 0, 0, 0.731);
+
+}
+
+#fullscreen:hover{
+  color: blue;
+  background-color: rgba(0, 0, 0, 0.731);
+}
+
+.speed:hover{
+  color: greenyellow;
+  background-color: rgba(0, 0, 0, 0.731);
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
