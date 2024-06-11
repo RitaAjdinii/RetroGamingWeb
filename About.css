@@ -260,26 +260,30 @@ img{
 }
 
 #mario{
+  height: 200px;
+  width: auto;
   z-index: -100;
   animation: move 2s 800;
   position:relative;
   bottom:100px;
   animation-direction: alternate;
   animation-timing-function: linear;
+  left:80px;
 }
 
 #pipe{
   z-index: 100;
   position:absolute;
-  height: 280px;
-  top:300px;
+  height: 240px;
+  top:350px;
+  left:30px;
 }
 
 @keyframes move{
   from{
-    top:0;
+    top:100px;
   }
   to{
-    top:250px;
+    top:300px;
   }
 }
