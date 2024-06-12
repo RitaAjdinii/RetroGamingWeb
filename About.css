@@ -282,9 +282,9 @@ img{
 
 @keyframes move{
   from{
-    top:100px;
+    top:110px;
   }
   to{
-    top:300px;
+    top:350px;
   }
 }
