@@ -2,6 +2,21 @@ const nav =document.querySelector("nav");
 const navToggle = document.querySelector(".nav-toggle");
 const linksContainer = document.querySelector(".links-container");
 
+// script.js
+
+document.addEventListener("DOMContentLoaded", function() {
+    window.onload = function() {
+        const preloader = document.getElementById('preloader');
+        const content = document.getElementById('content');
+        
+
+        setTimeout(function(){
+            preloader.style.display = 'none';
+            content.style.display = 'block';
+        },1000);
+    }
+});
+
 
 window.addEventListener("scroll",()=>{
     const navHeight = nav.getBoundingClientRect().height;

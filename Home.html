@@ -15,73 +15,87 @@
 <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css">
 </head>
 <body>
-    <header id="home">
-        <nav id="nav">
-            <div class="nav-center">
-                <div class="nav-header">
-                    <div class="nav-toggle">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </div>
-                </div>
-                <div class="links-container">
-                    <ul class="links">
-                        <li ><a href="#" class="scroll-link">Home</a></li>
-                        <li ><a href="Gallery.html" class="scroll-link">Game_Gallery</a></li>
-                        <li ><a href="About.html" class="scroll-link">About</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="banner">
-            <div class="container">
-                <h1>Retro Mania Games</h1>
-                <p>
-                    Embark on an epic adventure through the Mushroom Kingdom and beyond, where every block holds a mystery and every level brings new challenges
-                </p>
-                <a href="About.html" class="scroll-link btn btn-white">About Us</a>
-            </div>
+    <div id="preloader">
+        <div class="pacman">
+            <div class="pacman-top"></div>
+            <div class="pacman-bottom"></div>
+            <div class="feed"></div>
         </div>
-    </header>
-    <main id="main">
-        <section class="product"> 
-            <h2 class="product-category">Play Games</h2>
-            <div class="product-container">
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/CarGame.png" class="product-thumb" alt="">
-                        <a href="games/CarGame/index.html"><button class="card-btn">Play</button></a>
+        <p id="loading">Loading...</p>
+    </div>
 
+    <div id="content" style="display:none;">
+        <header id="home">
+            <nav id="nav">
+                <div class="nav-center">
+                    <div class="nav-header">
+                        <div class="nav-toggle">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </div>
                     </div>
-                    <div class="product-info">
-                        <p class="product-short-description">Car Race Run</p>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="" class="product-thumb" alt="">
-                        <button class="card-btn">Play</button>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-short-description">Game2</p>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="" class="product-thumb" alt="">
-                        <button class="card-btn">Play</button>
-                    </div>
-                    <div class="product-info">
-                        <p class="product-short-description">Game3</p>
+                    <div class="links-container">
+                        <ul class="links">
+                            <li ><a href="#" class="scroll-link">Home</a></li>
+                            <li ><a href="Gallery.html" class="scroll-link">Game_Gallery</a></li>
+                            <li ><a href="About.html" class="scroll-link">About</a></li>
+                        </ul>
                     </div>
                 </div>
-        </section>
-    </main>
-    <footer id="footer">
-        <p>&copy;2024 RetroManiaGames.All rights reserved.</p>
-    </footer>
+            </nav>
+            <div class="banner">
+                <div class="container">
+                    <h1>Retro Mania Games</h1>
+                    <p>
+                        Embark on an epic adventure through the Mushroom Kingdom and beyond, where every block holds a mystery and every level brings new challenges
+                    </p>
+                    <a href="About.html" class="scroll-link btn btn-white">About Us</a>
+                </div>
+            </div>
+        </header>
+        <main id="main">
+            <section class="product"> 
+                <h2 class="product-category">Play Games</h2>
+                <div class="product-container">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/CarGame.png" class="product-thumb" alt="">
+                            <a href="games/CarGame/index.html"><button class="card-btn">Play</button></a>
+    
+                        </div>
+                        <div class="product-info">
+                            <p class="product-short-description">Car Race Run</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="" class="product-thumb" alt="">
+                            <button class="card-btn">Play</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-short-description">Game2</p>
+                        </div>
+                    </div>
+    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="" class="product-thumb" alt="">
+                            <button class="card-btn">Play</button>
+                        </div>
+                        <div class="product-info">
+                            <p class="product-short-description">Game3</p>
+                        </div>
+                    </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <p>&copy;2024 RetroManiaGames.All rights reserved.</p>
+        </footer>
+        <audio id="jump-sound" src="audio/maro-jump-sound-effect_1.mp3" preload="auto"></audio>
+        <script src="Home.js"></script>
+     </body>
+    </div>        
     <audio id="jump-sound" src="audio/maro-jump-sound-effect_1.mp3" preload="auto"></audio>
     <script src="Home.js"></script>
 </body>
