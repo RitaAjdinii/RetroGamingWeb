@@ -31,7 +31,7 @@
   @import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 
 html{
-  background-color:#000;
+  background-color:var(--clr-grey-1);
   overflow-x:hidden;
 }
 
