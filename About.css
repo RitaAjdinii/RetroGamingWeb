@@ -226,7 +226,6 @@ nav{
 
 #main .section p:hover{
   color: white;
-  cursor: pointer;
   background-color: rgb(173, 173, 173);
   text-shadow: 2px 1px 3px rgb(0, 0, 0);
 }

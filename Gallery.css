@@ -207,13 +207,11 @@
 .video-controls{
   height:200px;
   width: auto;
-  border: 3px solid orange;
 }
 
 .scroll{
   width:500px;
   height: 100%;
-  border:3px solid purple;
   overflow:auto;
 }
 
