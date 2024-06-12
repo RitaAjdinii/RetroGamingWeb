@@ -222,6 +222,7 @@ nav{
   font-family: var(--ff-2);
   color:var(--clr-black-1);
   text-shadow: 2px 1px 3px rgba(255, 255, 255, 0.244);
+  text-align:justify;
 }
 
 #main .section p:hover{
