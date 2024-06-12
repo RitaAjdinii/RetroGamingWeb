@@ -202,7 +202,7 @@ nav{
 }
 
 #main .title{
-  color: var(--clr-white-1);
+  color: rgb(243, 68, 32);
   font-family: var(--ff-2);
   text-align: center;
   margin:20px 0;
@@ -225,9 +225,10 @@ nav{
 }
 
 #main .section p:hover{
-  color: rgba(255, 255, 255, 0.576);
+  color: white;
   cursor: pointer;
-  text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.5);
+  background-color: rgb(173, 173, 173);
+  text-shadow: 2px 1px 3px rgb(0, 0, 0);
 }
 
 #footer{
@@ -275,7 +276,7 @@ img{
   z-index: 100;
   position:absolute;
   height: 240px;
-  top:350px;
+  top:390px;
   left:30px;
 }
 
