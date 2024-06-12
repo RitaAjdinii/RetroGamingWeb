@@ -185,8 +185,10 @@
 
 
 .display-video{
-  height:300px;
+  object-fit: cover;
   width: 100%;
+  height: 100%;
+  background-color: var(--clr-yellow-1);
 }
 
 .display-container{
@@ -199,13 +201,13 @@
 }
 
 .video-display{
-  height:300px;
+  height:500px;
   width: auto;
-  border: 3px solid green;
+  border:1px solid grey;
 }
 
 .video-controls{
-  height:200px;
+  border:1px solid grey;
   width: auto;
 }
 
@@ -227,12 +229,12 @@
 }
 
 .video-container:hover{
-  background-color: blue;
+  background-color: var(--clr-grey-1);
   cursor: pointer;
 }
 
 .video-container:hover h3{
-  color: red;
+  color: white;
 }
 
 .control-btn{
