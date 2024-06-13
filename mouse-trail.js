@@ -12,7 +12,7 @@ app.renderer.view.style.position = "fixed";
 app.renderer.view.style.top = "0";
 app.renderer.view.style.left = "0";
 app.renderer.view.style.pointerEvents = "none"; 
-app.renderer.view.style.zIndex = "20"
+app.renderer.view.style.zIndex = "20";
 
 document.body.appendChild(app.view);
 

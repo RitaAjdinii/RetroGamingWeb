@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+canvas {
+    display: block;
+}
+#startButton, #replayButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#replayButton {
+    display: none;
+}
+#score {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#finalScore {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: none;
+}
