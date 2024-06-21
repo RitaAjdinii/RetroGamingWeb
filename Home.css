@@ -480,7 +480,7 @@ animation: eat 1s linear 0s infinite;
     opacity: 1;
   }
     
-  .card-btn:hover {
+  a .card-btn:hover {
     background: var(--clr-yellow-2);
     color: var(--clr-white-1);
     font-family: var(--ff-3);
